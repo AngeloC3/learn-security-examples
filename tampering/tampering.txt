@@ -1,0 +1,7 @@
+The vulnerability in insecure.js is caused by the lack of saniation and validation of the input. 
+    Therefore, if the name field is a script, it is injected into the HTML which can cause issues.
+    The secure.js file adds the escapeHTML function which santizies the input beofre injecting it into the HTML.
+
+Tampering could violate the integrity principle by using the injection of a script, for example, to modify data.
+    Additionally, it could violate the confidentiality principle by using the injection of a script to change
+    access information or show hidden information.

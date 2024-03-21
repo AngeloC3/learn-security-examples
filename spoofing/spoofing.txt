@@ -1,1 +1,9 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The session secret "SOMESECRET" is stored in plain text in the code file in insecure.js, 
+    whereas in secure.js, it is hidden in a process variable which makes the secret harder to be compromised.
+    Additionally, secure.js uses httpOnly and sameSit as true, which helps protect against certain attcks.
+
+Spoofing can violate the confidentiality principle since it can give someone access to sensitive information via 
+    taking the indentity of someone with higher credentials / clearance. It also could violate the integrity principle,
+    since the spoofer can use his false access to modify data.
