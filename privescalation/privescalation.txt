@@ -1,0 +1,5 @@
+The insecure.js lacks proper authentification as it only checks the admin variable stored in the session. 
+    In secure.js, the user role is better validated via what is essentially middleware un the update role route.
+
+You can enforce HTTPS only to encrypt data in transit, and you can use CSRF protection to further protect the site. 
+    Additionally, you can enforce a rate limit to prevent brute force attacks.

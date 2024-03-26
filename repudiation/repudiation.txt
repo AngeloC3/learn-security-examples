@@ -1,2 +1,8 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+In insecure.js, there is a lack of propper logging for operations such as sending and getting messages which makes it hard to
+    trace actions. In secure.js, there is a log stream which logs actions that will prevent repudiation.
+    
+You can create backup logs so that if there is an error with the log database, you still have the history. Additionally,    
+    you can protect against tampering so attackers can't edit the logs to cover their tracks.
